@@ -36,10 +36,11 @@ const tips = [
   "Stickの正式名称はMysterious Stickです。"
 ];
 
+const tipsButton = document.getElementById("tipsButton");
+tipsButton.onclick = onClick;
+const tipsText = document.getElementById("tipsText");
+
 function onClick() {
-  
-  const tipsButton = document.getElementById("tipsButton");
-  const tipsText = document.getElementById("tipsText");
   const nowDate = new Date();
   const today = nowDate.getDate() + ":" + nowDate.getMonth();
   
