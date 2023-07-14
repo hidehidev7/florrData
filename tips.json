@@ -1,4 +1,5 @@
-const tips = [
+{
+  [
   "クモ退治には、Rockが効果的です。",
   "DPSが最も高いペタルはRiceです。使いこなせば最強かも？",
   "かつてLightingは最強と呼ばれていました。",
@@ -34,21 +35,5 @@ const tips = [
   "daromanimu.D.Bさんは、florr.ioの動画も投稿しているyoutuberです。",
   "Queen Fire Antは、Ant Hellの最奥でスポーンします。",
   "Stickの正式名称はMysterious Stickです。"
-];
-
-const tipsButton = document.getElementById("tipsButton");
-tipsButton.onclick = onClick;
-const tipsText = document.getElementById("tipsText");
-
-function onClick() {
-  const nowDate = new Date();
-  const today = nowDate.getDate() + ":" + nowDate.getMonth();
-  
-  console.log(today);
-  if(localStorage.getItem('tipsDate') !== today) {
-    tipsText.textContent = tips[Math.floor( Math.random() * tips.length)];
-    localStorage.setItem('tipsDate', today);
-  } else {
-    tipsButton.textContent = "また明日見に来てね";
-  }
+  ];
 }
