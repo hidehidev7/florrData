@@ -1,4 +1,4 @@
-{
+var tipsData = 
   [
   "クモ退治には、Rockが効果的です。",
   "DPSが最も高いペタルはRiceです。使いこなせば最強かも？",
@@ -35,5 +35,4 @@
   "daromanimu.D.Bさんは、florr.ioの動画も投稿しているyoutuberです。",
   "Queen Fire Antは、Ant Hellの最奥でスポーンします。",
   "Stickの正式名称はMysterious Stickです。"
-  ]
-}
+  ];
