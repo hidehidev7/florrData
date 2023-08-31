@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 10px;
+            font-family: 'Arial', 'ヒラギノ角ゴシック体', 'Source Han Code JP', 'BIZ UDゴシック', sans-serif;
+            background-color: lightgreen;
+            color: white;
+            font-size:24px;
+        }
+
+        #whole_container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .section {
+            margin: 10px;
+        }
+
+        .section_flower {
+            width: 250px;
+        }
+
+        .section_achievements {
+            width: 900px;
+        }
+
+        .section_server {
+            width: 250px;
+        }
+
+        h1.roletype {
+            text-align: center;
+            font-size: 130%;
+            background-color: #222222;
+            border-radius: 7px;
+            padding: 4px;
+            border: 7px solid #222222;
+        }
+
+        .achievements_rolesback_container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .rolesback {
+            background-color: #222222;
+            border-radius: 7px;
+            padding: 10px;
+            margin-bottom:10px;
+        }
+
+        .roles {
+            background-color: black;
+            line-height: 1.5em;
+        }
+
+        .description_box {
+            margin-bottom:7px;
+            margin-left: 5px;
+            border-left: 5px solid #666666;
+            border-bottom: 5px solid #666666;
+            padding-left: 3px;
+            font-size: 80%;
+        }
+
+        .backLighter {
+            background-color: #DDDDDD;
+        }
+    </style>
+    <script>
+        addEventListener("DOMContentLoaded", () => { document.body.style.zoom = "0.7"; });
+    </script>
+</head>
+<body>
+    <p style="color:black; text-align: center;">javascriptにより表示のサイズを70%にしています。</p>
+    <p style="color:black; text-align: center;">表示がつめつめになって配置が崩れている場合は縮小表示してください。</p>
+    <div id="whole_container">
+        <div class="section section_flower">
+            <h1 class="roletype">-Flowers-</h1>
+            <div class="rolesback">
+                <span class="roles" style="color:#2bffa3;">@Super (240+)</span><br>
+                <span class="roles" style="color:#ff7fb0;">@Plus Ultra (220+)</span><br>
+                <span class="roles" style="color:#f84589;">@Ultra (200+)</span><br>
+                <span class="roles" style="color:#1fdbde;">@Mythic (180+)</span><br>
+                <span class="roles" style="color:#de1f1f;">@Legendary (160+)</span><br>
+                <span class="roles" style="color:#861fde;">@Epic (135+)</span><br>
+                <span class="roles" style="color:#4d52e3;">@Rare (110+)</span><br>
+                <span class="roles" style="color:#ffe65d;">@Unusual (70+)</span><br>
+                <span class="roles" style="color:#7eef6d;">@Common (30+)</span><br>
+            </div>
+            <div class="rolesback">
+                <span class="roles" style="color:#ee9d44;">@Lucky Flower</span>
+                <div class="description_box"><span style="color: #f84589">Ultra</span> Magnet / Third Eye / Ankh / Mark のいずれかを所持していること</div>
+            </div>
+        </div>
+
+        <div class="section section_achievements">
+            <h1 class="roletype">-Achievements-</h1>
+            <div class="achievements_rolesback_container">
+                <div style="width: 250px;">
+                    <div class="rolesback">
+                        <span class="roles" style="color:#e7e7e7;">@Mythic Web ×2+</span><br>
+                        <div class="description_box">2個以上</div>
+                        <span class="roles" style="color:#e4e4af;">@Mythic Egg ×6+</span><br>
+                        <div class="description_box">Egg(Beetle) のみを6個以上</div>
+                        <span class="roles backLighter" style="color:#1b1d1e;">@Mythic Stinger</span><br>
+                        <span class="roles" style="color:#088e47;">@Basil</span><br>
+                        <span class="roles backLighter" style="color:#993a4d;">@Mythic Magnet</span><br>
+                        <span class="roles" style="color:#5baee9;">@Third Eye</span><br>
+                        <span class="roles backLighter" style="color:#1a2935;">@Mythic Cutter</span><br>
+                        <span class="roles" style="color:#3cb710;">@Mythic Uranium</span><br>
+                        <span class="roles" style="color:#bda782;">@Mythic Yggdrasil</span><br>
+                        <span class="roles" style="color:#ffe869;">@Square</span><br>     
+                    </div>
+                </div>
+                    <div style="width: 300px;">
+                    <div class="rolesback">
+                        <span class="roles" style="color:#FFFFFF;">@Ultra Wing</span><br>
+                        <span class="roles" style="color:#e4e4af;">@Ultra Egg(Beetle / Ant)</span><br>
+                        <span class="roles" style="color:#f1ebbe;">@Ultra Bone</span><br>
+                        <span class="roles backLighter" style="color:#1b1d1e;">@Ultra Stinger</span><br>
+                        <span class="roles" style="color:#fbff83;">@Ultra Shell</span><br>
+                        <span class="roles" style="color:#179717;">@Ultra Sponge / Cactus / Soil</span><br>
+                        <span class="roles backLighter" style="color:#993a4d;">@Ultra Magnet</span><br>
+                    </div>
+                </div>
+                <div style="width:300px;">
+                    <div class="rolesback">
+                        <span class="roles" style="color:#df1fd5;">@Ultra Petal</span><br>
+                        <span class="roles" style="color:#2bffa3;">@Super Petal</span><br>
+                    </div>
+                    <div class="rolesback">
+                        <span class="roles" style="color:#faff00;">@Complete Mob Gallery</span><br>
+                        <div class="description_box">ロール申請時点で取得可能な<span style="color:#7eef6d;">Common</span>~<span style="color:#1fdbde;">Mythic</span>モブの図鑑を全て埋めていること</div>
+                    </div>
+                    <div class="rolesback">
+                        <span class="roles backLighter" style="color:#766e67">@PvP 1k+</span><br>
+                        <span class="roles backLighter" style="color:#766e67">@PvP 5k+</span><br>
+                        <span class="roles backLighter" style="color:#766e67">@PvP 10k+</span><br>
+                        <div class="description_box">PvPマップまたはHel</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section_server">
+            <h1 class="roletype">-Server-</h1>
+            <div class="rolesback">
+                <span class="roles" style="color:#a0cea8;">@Visitor</span><br>
+                <div class="description_box">かつてはflorr.ioをプレイしていたが現在はプレイしておらず復帰する予定もない</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
