@@ -10,7 +10,7 @@
             font-weight: bold;
             background-color: lightgreen;
             color: white;
-            font-size: 24px;
+            font-size: 18px;
         }
 
         #whole_container {
@@ -18,6 +18,7 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            font-size: 24px;
         }
 
         .section {
@@ -65,6 +66,9 @@
         .roles {
             background-color: black;
             line-height: 1.5em;
+            border-radius: 3px;
+            padding: 3px;
+            margin: 2px 0px 2px 0px
         }
 
         .description_box {
@@ -86,6 +90,48 @@
             border-radius: 2px;
             padding: 0px 3px 0px 3px;
             font-family: 'Consolas', sans-serif;
+        }
+
+        /* カーソルを重ねる要素 */
+        .tooltip {
+            position: relative;
+            /* ツールチップの位置の基準に */
+            cursor: pointer;
+            /* カーソルを当てたときにポインターに */
+        }
+
+        /* ツールチップのテキスト */
+        .tooltip-text {
+            visibility: hidden;
+            /* はじめは隠しておく */
+            position: absolute;
+            /* 絶対配置 */
+            left: 50%;
+            /* 親に対して中央配置 */
+            transform: translateX(-50%);
+            /* 親に対して中央配置 */
+            bottom: -30px;
+            /* 親要素下からの位置 */
+            display: inline-block;
+            padding: 5px;
+            /* 余白 */
+            white-space: nowrap;
+            /* テキストを折り返さない */
+            font-size: 1rem;
+            /* フォントサイズ */
+            line-height: 1.3;
+            /* 行間 */
+            background: #ffffff;
+            /* 背景色 */
+            color: #000000;
+            /* 文字色 */
+            border-radius: 3px;
+            /* 角丸 */
+        }
+
+        /* ホバー時にツールチップの非表示を解除 */
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
         }
     </style>
 </head>
@@ -143,54 +189,70 @@
                                 style="color:#7eef6d;">Common</span>~<span
                                 style="color:#1fdbde;">Mythic</span>モブの図鑑を全て埋めていること</div>
                     </div>
-                    <div class="rolesback">
-                        <span class="roles backLighter" style="color:#766e67">@PvP 1k+</span><br>
-                        <span class="roles backLighter" style="color:#766e67">@PvP 5k+</span><br>
-                        <span class="roles backLighter" style="color:#766e67">@PvP 10k+</span><br>
-                        <div class="description_box" lang="ja">PvPマップまたはHelでのスコアが指定値に達すること</div>
-                    </div>
                 </div>
             </div>
         </div>
         <div class="section section_server">
             <h1 class="roletype">-Server-</h1>
             <div class="rolesback_container">
-                <div style="width:350px;">
+                <div style="width:400px;">
                     <div class="rolesback">
                         <span class="roles" style="color:#a0cea8;">@Visitor</span><br>
                         <div class="description_box" lang="ja">
-                            かつてはflorr.ioをプレイしていたが現在はプレイしておらず復帰する予定もないこと。一時的にプレイを休める場合は該当しない</div>
-                        <div class="description_box" lang="ja">気が変わった場合は, 再び申請することでVisitorロールを外すことができる</div>
+                            かつてはflorr.ioをプレイしていたが現在はプレイしておらず復帰する予定もないことを示すためのロール。一時的にプレイを休める場合は該当しない</div>
+                        <div class="description_box" lang="ja">つまり<span class="tooltip" style="text-decoration: underline;">florr.ioと縁を切った<span class="tooltip-text">YOUは何しにJPFへ？</span></span>ということ</div>
                     </div>
-                    <div class="rolesback">
-                        <span class="roles" style="color:#9CA9B4;">@Super mob notification</span><br>
-                        <div class="description_box" lang="ja"><span style="color:#2bffa3;">Super</span>が出現したときに通知される
-                        </div>
-                        <div class="description_box" lang="ja">条件を満たすことで申請できる。条件は<span
-                                class="keyword">#florr-bot-commands</span>にて<span class="keyword">/florr report_mob
-                                access_super_notify</span>で確認できる</div>
-                    </div>
-                </div>
-                <div style="width:400px;">
                     <div class="rolesback">
                         <div lang="ja">これらのロールは<span class="keyword">#server-roles</span>で設定できる</div>
-                        <span class="roles" style="color:#9CA9B4;">@Centralia Maze</span>, <span class="roles"
+                        <span class="roles" style="color:#9CA9B4;">@Super mob notification</span><br>
+                        <div class="description_box" lang="ja"><span
+                                style="color:#2bffa3;">Super</span>が出現したときにメンションされる。現在は手動。
+                        </div>
+                        <span class="roles" style="color:#9CA9B4;">@Garden</span>, <span class="roles"
+                            style="color:#9CA9B4;">@Desert</span>, <span class="roles"
+                            style="color:#9CA9B4;">@Ocean</span>, <span class="roles"
                             style="color:#9CA9B4;">@Jungle</span><br>
-                        <div class="description_box" lang="ja">それぞれCentralia Maze, Jungleに誰かが行くときにメンションされる</div>
+                        <div class="description_box" lang="ja">それぞれのエリアに誰かが行くときにメンションされる</div>
                         <span class="roles" style="color:#9CA9B4;">@Marker</span><br>
                         <div class="description_box" lang="ja"><span
                                 style="color:#2bffa3;">SHelBeetle</span>が来た時などにメンションされる。高レアMarkを持っている人用</div>
-                        <span class="roles" style="color:#9CA9B4;">@Ultra mob notification</span><br>
-                        <div class="description_box" lang="ja"><span style="color:#f84589;">Ultra</span>が出現したときに通知される
-                        </div>
                         <span class="roles" style="color:#9CA9B4;">@Shiny Ladybug notification</span><br>
                         <div class="description_box" lang="ja"><span
                                 style="color:#de1f1f">Legendary</span>以上のShinyが出現したときにメンションされる</div>
-                        <span class="roles" style="color:#9CA9B4;">@Client Update notification</span><br>
-                        <div class="description_box" lang="ja">florr.ioがアップデートされたときに通知される</div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div style="display:flex; justify-content: center; color:black; margin-top:50px;">
+        <div style="background-color:white; width:calc(70% + 30px); padding:10px;">
+            <h2 style="text-align: center;">補足</h2>
+            <ul>
+                <li>
+                    <span style="color:#7a7fdd;">@Ancient Rare</span> や，<span style="color:#861fde;">@Past Epic</span>
+                    などのロールは，過去に取得できたロールです。現在は取得不可能です。
+                    <ul>
+                        <li>Ancientはflorr.ioがwave制に変わる以前のロールです。</li>
+                        <li>Pastはレベルシステムが大きく変更される前の基準にのっとったロールです。</li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="roles" style="color:#9CA9B4;">@Client Update notification</span> <span class="roles"
+                        style="color:#9CA9B4;">@Ultra mob notification</span>のロールはJP Flowers Bot
+                    が停止したことやflorr.ioのゲームシステムが変更されたことにより現在その機能を失っています。（取得自体は可能ですが……）
+                </li>
+                <li>
+                    現在、一時的にPvPロールの取得を不可としています。
+                </li>
+                <li>
+                    <span class="roles" style="color:#9CA9B4;">@Centralia Maze</span>は<span class="roles"
+                        style="color:#9CA9B4;">@Garden</span>に変更されました。
+                </li>
+                <li>
+                    <span class="roles" style="color:#a0cea8;">@Visitor</span>の仕様は近いうちに変更される可能性があります。
+                </li>
+            </ul>
         </div>
     </div>
 </body>
