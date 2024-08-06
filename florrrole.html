@@ -74,35 +74,16 @@
 
         .roles_container {
             overflow: hidden;
-            text-wrap: nowrap;
-            margin-right: 30px;
-            border-radius: 5px;
-            position: relative;
-        }
-
-        .roles_container::after {
-            font-size: 70%;
-            content: "ホバーして詳細を確認・・・";
-            background-color: #444444;
-        }
-
-        .roles_container:hover {
             text-wrap: wrap;
             margin-right: 0px;
+            border-radius: 5px;
+            position: relative;
             background-color: black;
         }
 
-        .roles_container:hover::after {
-            display: none;
-        }
-
         .roles_container div.description_box {
-            display: none;
             font-size: 80%;
-            background-color: #222222
-        }
-
-        .roles_container:hover div.description_box {
+            background-color: #222222;
             display: block;
             margin-bottom: 7px;
             margin-left: 10px;
