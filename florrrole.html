@@ -15,11 +15,14 @@
 
         p {
             font-size: 80%;
+            margin-bottom: 0px;
+            margin-top:20px;
         }
 
         h2 {
-            margin: 5px;
-            margin-bottom:-5px;
+            margin: 0px;
+            margin-bottom: -10px;
+            font-size: 1.3em;
         }
 
         #whole_container {
@@ -119,35 +122,39 @@
         }
 
         .common {
-            color:#7eef6d;
+            color: #7eef6d;
         }
 
         .unusual {
-            color:#ffe65d;
+            color: #ffe65d;
         }
 
         .rare {
-            color:#4d52e3;
+            color: #4d52e3;
         }
 
         .epic {
-            color:#861fde;
+            color: #861fde;
         }
 
         .legendary {
-            color:#de1f1f;
+            color: #de1f1f;
         }
 
         .mythic {
-            color:#1fdbde;
+            color: #1fdbde;
         }
 
         .ultra {
-            color:#f84589;
+            color: #f84589;
         }
 
         .super {
-            color:#2bffa3;
+            color: #2bffa3;
+        }
+
+        .defc {
+            color: #9CA9B4;
         }
 
         /* カーソルを重ねる要素 */
@@ -197,14 +204,14 @@
 <body lang="en">
     <div id="whole_container">
         <div class="section section_flower">
-                <div class="rolesback rolesback_head">
-                    <h1>-Flower-</h1>
-                    <p>florr.io内における到達レベルを示すロール</p>
-                </div>
+            <div class="rolesback rolesback_head">
+                <h1>-Flower-</h1>
+                <p>florr.io内における到達レベルを示すロール</p>
+            </div>
             <div class="rolesback_container">
                 <div class="rolesback">
                     <h2>レベルロール</h2>
-                    <p>ゲーム内で指定のレベルに達することで取得できる</p>
+                    <p>ゲーム内で指定のレベルに達すること</p>
                     <span class="roles" style="color:#72ffc2;">@130+</span><br>
                     <span class="roles super">@120+</span> <span class="mini-description">(Super)</span><br>
                     <span class="roles" style="color:#ff7fb0;">@110+</span><br>
@@ -218,7 +225,7 @@
                 </div>
                 <div class="rolesback">
                     <h2>レアリティロール</h2>
-                    <p>対応するレアリティのレベルロールに加えて、指定のアチーブメントを全て達成することで取得できる</p>
+                    <p>対応するレアリティのレベルロールに加えて、指定のアチーブメントを全て達成すること</p>
                     <div class="roles_container"><span class="roles super">@Super</span>
                         <div class="description_box">Super Crafter, Super Hunter, Super Unkillable, Super Pain dealer,
                             Super Hater, Super Biologist</div>
@@ -242,7 +249,8 @@
                         <div class="description_box">Legendary Gear Up, Legendary Pain dealer</div>
                     </div>
                     <div class="roles_container"><span class="roles common">@Common</span>
-                        <div class="description_box">Ant Hell, Desert, Go to WHERE?!, Ocean, Sewers, Welcome to the Jungle</div>
+                        <div class="description_box">Ant Hell, Desert, Go to WHERE?!, Ocean, Sewers, Welcome to the
+                            Jungle</div>
                     </div>
                 </div>
             </div>
@@ -255,37 +263,61 @@
             </div>
             <div class="rolesback_container">
                 <div class="rolesback">
-                    <h2>Mythicペタルロール</h2>
-                    <p>Mythicの指定のペタルを持っていれば取得できる</p>
-                    <span class="roles" style="color:#f1f1f1;">@Mythic Basic</span><br>
-                    <span class="roles" style="color:#3cb710;">@Mythic Uranium</span><br>
+                    <h2>ペタルロール (1)</h2>
+                    <p>指定のレアリティの指定のペタルを持っていること</p>
                     <span class="roles" style="color:#bda782;">@Mythic Yggdrasil</span><br>
-                    <span class="roles backLighter" style="color:#993a4d;">@Mythic Magnet</span><br>
-                    <span class="roles backLighter" style="color:#1a2935;">@Mythic Cutter</span><br>
-                    <span class="roles" style="color:#5baee9;">@Mythic Third Eye</span><br>
-                </div>
-                <div class="rolesback">
-                    <h2>Ultraペタルロール</h2>
-                    <p>Ultraの指定のペタルを持っていれば取得できる</p>
-                    <span class="roles" style="color:#5baee9;">@Ultra Third Eye</span><br>
-                    <span class="roles backLighter" style="color:#993a4d;">@Ultra Magnet</span><br>
                     <span class="roles backLighter" style="color:#9e0606;">@Ultra Mark</span><br>
+                    <span class="roles" style="color:#bda782;">@Ultra Yggdrasil</span><br>
+                    <span class="roles" style="color:#3cb710;">@Ultra Uranium</span><br>
                     <span class="roles" style="color:#bd6812;">@Ultra Soil</span><br>
-                    <span class="roles backLighter" style="color:#1b1d1e;">@Ultra Stinger</span><br>
-                    <span class="roles" style="color:#dfc874;">@Ultra Ankh</span><br>
+                    <span class="roles" style="color:#808080;">@Ultra Shovel</span><br>
                 </div>
                 <div class="rolesback">
-                    <h2>その他のペタルロール</h2>
-                    <p>いずれかのレアリティのSquareペタルを持っていれば取得できる</p>
-                    <span class="roles" style="color:#ffe869;">@Square (Petal)</span><br>
-                    <p>それぞれのレアリティのペタルを１つでも持っていれば取得できる</p>
-                    <span class="roles" style="color:#df1fd5;">@Ultra Petal</span><br>
+                    <h2>ペタルロール (2)</h2>
+                    <p>指定のレアリティの指定のペタルを持っていること</p>
+                    <span class="roles" style="color:#fffff9;">@Ultra Rubber</span><br>
+                    <span class="roles backLighter" style="color:#1a2935;">@Ultra Cutter</span><br>
+                    <span class="roles" style="color:#f1f1f1;">@Ultra Basic</span><br>
+                    <span class="roles" style="color:#fc85c0">@Ultra Amulet</span><br>
+                    <div class="roles_container"><span class="roles backLighter" style="color:#696969">@Ultra
+                            Moon</span>
+                        <div class="description_box">Ultra Moonについてはショップで購入していない証拠を提示することが必要です</div>
+                    </div>
+                </div>
+                <div class="rolesback">
+                    <h2>Squareペタルロール</h2>
+                    <p>それぞれのレアリティのSquareペタルを持っていること</p>
+                    <span class="roles" style="color:#5bfa3d;">@Common Square</span><br>
+                    <span class="roles" style="color:#fffa3d;">@Unusual Square</span><br>
+                    <span class="roles" style="color:#5b57e1;">@Rare Square</span><br>
+                    <span class="roles" style="color:#ad2eb8;">@Epic Square</span><br>
+                    <span class="roles" style="color:#ff3e3d;">@Legendary Square</span><br>
+                    <span class="roles" style="color:#5bfae1;">@Mythic Square</span><br>
+                    <span class="roles" style="color:#ff2e8f;">@Ultra Square</span><br>
+                    <span class="roles" style="color:#5bfa8f;"><span class="tooltip">@Super Square<span
+                                class="tooltip-text">こんなロール誰が取れるの？</span></span></span><br>
+
+                </div>
+                <div class="rolesback">
+                    <h2>レアリティペタルロール</h2>
+                    <p>それぞれのレアリティのペタル全て (Squareを除く) を持っていること</p>
+                    <span class="roles" style="color:#00bfff;">@Complete Mythic Petal</span><br>
+                    <span class="roles" style="color:#ff2a7b;">@Complete Ultra Petal</span><br>
+                    <p>Superペタルを1つでも持っていること</p>
                     <span class="roles" style="color:#2bffa3;">@Super Petal</span><br>
                 </div>
                 <div class="rolesback">
                     <h2>ギャラリー</h2>
-                    <p>ロール申請時点で取得可能な<span class="common">Common</span>~<span class="mythic">Mythic</span>モブの図鑑を全て埋めていること</p>
+                    <p>ロール申請時点で取得可能な<span class="common">Common</span>~<span class="mythic">Mythic</span>モブの図鑑を全て埋めていること
+                    </p>
                     <span class="roles" style="color:#faff00;">@Complete Mob Gallery</span><br>
+                </div>
+                <div class="rolesback">
+                    <h2>PvPスコアロール</h2>
+                    <p>PvPマップにて基準以上のスコアを記録すること</p>
+                    <span class="roles backLighter" style="color:#766e67;">@PVP - Score 1k+</span><br>
+                    <span class="roles backLighter" style="color:#766e67;">@PVP - Score 5k+</span><br>
+                    <span class="roles backLighter" style="color:#766e67;">@PVP - Score 10k+</span><br>
                 </div>
             </div>
         </div>
@@ -297,25 +329,31 @@
             <div class="rolesback_container">
                 <div class="rolesback">
                     <h2>Visitor</h2>
-                        <p>かつてはflorr.ioをプレイしていたが現在はプレイしておらず復帰する予定もないことを示すためのロール。一時的にプレイを休める場合は該当しない</p>
-                        <p>つまり<span class="tooltip"
-                            style="text-decoration: underline;">florr.ioと縁を切った<span
-                                class="tooltip-text">YOUは何しにJPFへ？</span></span>ということ</p>
-                        <span class="roles" style="color:#a0cea8;">@Visitor</span><br>
+                    <p>かつてはflorr.ioをプレイしていたが現在はプレイしておらず復帰する予定もないことを示すためのロール。一時的にプレイを休める場合は該当しない</p>
+                    <p>つまりflorr.ioと縁を切ったということ</p>
+                    <span class="roles" style="color:#a0cea8;">@Visitor</span><br>
                 </div>
                 <div class="rolesback">
                     <h2>通知ロール</h2>
                     <p>メンバーがまとめたアップデートの情報が通知される。メンバーがアップデート情報を投稿するときにメンションする。（重複内容は避けよう）</p>
-                    <span class="roles" style="color:#9CA9B4;">@Client Update notification</span>
+                    <span class="roles defc">@Client Update notification</span>
                 </div>
                 <div class="rolesback">
                     <h2>呼び出しロール</h2>
-                    <p>それぞれのエリアに誰かが行くときにメンションされる</p>
-                    <span class="roles" style="color:#9CA9B4;">@Garden</span>, <span class="roles"
-                        style="color:#9CA9B4;">@Desert</span>, <span class="roles" style="color:#9CA9B4;">@Ocean</span>,
-                    <span class="roles" style="color:#9CA9B4;">@Jungle</span><br>
-                    <p><span class="legendary">Legendary</span>以上のShinyが出現したときにメンションされる</p>
-                    <span class="roles" style="color:#9CA9B4;">@Shiny Ladybug notification</span><br>
+                    <p>それぞれのエリアに誰かが行くときに誘うためにメンションされる</p>
+                    <span class="roles defc">@Garden</span>, <span class="roles defc">@Desert</span>, <span class="roles defc">@Ocean</span>,
+                    <span class="roles defc">@Jungle</span>, <span class="roles defc">@Sewers</span>, <span class="roles defc">@Ant Hell</span>, <span class="roles defc">@Hel</span><br>
+                    <p><span class="legendary">Legendary</span>以上のShinyが出現し、発見者がおすそわけしてくれるときにメンションされる</p>
+                    <span class="roles defc">@Shiny Ladybug notification</span><br>
+                    <p>Squadにおける役割が必要なときにメンションされる</p>
+                    <span class="roles defc">@egger</span>, <span class="roles defc">@lurer</span><br>
+                </div>
+                <div class="rolesback">
+                    <h2>PineApple関連ロール</h2>
+                    <p><span class="keyword">#super-notify</span>が閲覧できるようになるが、通知はされない</p>
+                    <span class="roles defc">@access super-notify</span><br>
+                    <p><span class="super">Super</span> Mob出現通知を受け取る</p>
+                    <span class="roles defc">@Super mob notification</span>
                 </div>
             </div>
         </div>
@@ -334,17 +372,10 @@
                     </ul>
                 </li>
                 <li>
-                    <span class="roles" style="color:#9CA9B4;">@Ultra mob
-                        notification</span>のロールはflorr.ioのゲームシステムが変更されたことにより削除されました。
-                </li>
-                <li>
-                    現在、一時的にPvPロールの取得を不可としています。
-                </li>
-                <li>
-                    <span class="roles" style="color:#9CA9B4;">@Centralia Maze</span>は<span class="roles"
-                        style="color:#9CA9B4;">@Garden</span>に変更されました。
+                    <span class="roles defc">@Centralia Maze</span>は<span class="roles defc">@Garden</span>に変更されました。
                 </li>
                 <li>旧レアリティロールはレベルロールに変更されました。</li>
+                <li>この表に載っていないペタルロールは全て削除されました。</li>
             </ul>
         </div>
     </div>
