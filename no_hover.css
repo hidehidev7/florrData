@@ -16,6 +16,10 @@ h2 {
     background-color: black;
 }
 
+.roles_container::after {
+    content: ""
+}
+
 .roles_container div.description_box, .roles_container:hover div.description_box {
     font-size: 80%;
     background-color: #222222;
