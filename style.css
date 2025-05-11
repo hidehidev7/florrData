@@ -1,0 +1,191 @@
+body {
+    margin: 10px;
+    font-family: 'Arial', 'ヒラギノ角ゴシック体', 'Source Han Code JP', 'BIZ UDゴシック', sans-serif;
+    font-weight: bold;
+    background-color: lightgreen;
+    color: white;
+    font-size: 18px;
+}
+
+p {
+    font-size: 80%;
+}
+
+h2 {
+    margin: 5px;
+    margin-bottom:-5px;
+}
+
+#whole_container {
+    width: 100%;
+    display: block;
+    font-size: 24px;
+}
+
+.section {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    display: block;
+}
+
+.section_flower {
+    background-color: gold;
+}
+
+.section_achievements {
+    background-color: dodgerblue;
+}
+
+.section_server {
+    background-color: darkkhaki;
+}
+
+.rolesback_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.rolesback {
+    background-color: #222222;
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+.rolesback_head {
+    width: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.rolesback_head h1 {
+    margin: 0px;
+}
+
+.roles_container {
+    overflow: hidden;
+    text-wrap: wrap;
+    margin-right: 0px;
+    border-radius: 5px;
+    position: relative;
+    background-color: black;
+}
+
+.roles_container div.description_box {
+    font-size: 80%;
+    background-color: #222222;
+    display: block;
+    margin-bottom: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 5px solid #222222;
+    border-radius: 5px;
+    padding-left: 3px;
+}
+
+.roles {
+    background-color: black;
+    line-height: 1.5em;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 2px 0px 2px 0px;
+    position: relative;
+}
+
+.mini-description {
+    font-size: 80%;
+    color: #BBBBBB;
+}
+
+.backLighter {
+    background-color: #DDDDDD;
+}
+
+.keyword {
+    background-color: #444444;
+    border-radius: 2px;
+    padding: 0px 3px 0px 3px;
+    font-family: 'Consolas', sans-serif;
+}
+
+.common {
+    color:#7eef6d;
+}
+
+.unusual {
+    color:#ffe65d;
+}
+
+.rare {
+    color:#4d52e3;
+}
+
+.epic {
+    color:#861fde;
+}
+
+.legendary {
+    color:#de1f1f;
+}
+
+.mythic {
+    color:#1fdbde;
+}
+
+.ultra {
+    color:#f84589;
+}
+
+.super {
+    color:#2bffa3;
+}
+
+.unique_yellow {
+    color: #ffb60b;
+}
+
+/* カーソルを重ねる要素 */
+.tooltip {
+    position: relative;
+    /* ツールチップの位置の基準に */
+    cursor: pointer;
+    /* カーソルを当てたときにポインターに */
+}
+
+/* ツールチップのテキスト */
+.tooltip-text {
+    visibility: hidden;
+    /* はじめは隠しておく */
+    position: absolute;
+    /* 絶対配置 */
+    left: 50%;
+    /* 親に対して中央配置 */
+    transform: translateX(-50%);
+    /* 親に対して中央配置 */
+    bottom: -30px;
+    /* 親要素下からの位置 */
+    display: inline-block;
+    padding: 5px;
+    /* 余白 */
+    white-space: nowrap;
+    /* テキストを折り返さない */
+    font-size: 1rem;
+    /* フォントサイズ */
+    line-height: 1.3;
+    /* 行間 */
+    background: #ffffff;
+    /* 背景色 */
+    color: #000000;
+    /* 文字色 */
+    border-radius: 3px;
+    /* 角丸 */
+}
+
+/* ホバー時にツールチップの非表示を解除 */
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
