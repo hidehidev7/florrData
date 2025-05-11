@@ -1,7 +1,6 @@
 body {
     margin: 10px;
-    font-family: 'Arial', 'ヒラギノ角ゴシック体', 'Source Han Code JP', 'BIZ UDゴシック', sans-serif;
-    font-weight: bold;
+    font-family: 'Arial', 'ヒラギノ角ゴシック体', 'BIZ UDPゴシック', sans-serif;
     background-color: lightgreen;
     color: white;
     font-size: 18px;
@@ -109,13 +108,23 @@ h2 {
     padding-left: 3px;
 }
 
+canvas {
+    height: 1em;
+}
+
+.roles_container:hover canvas, canvas:hover {
+    height: 1.5em;
+}
+
 .roles {
+    font-weight: bold;
     background-color: black;
     line-height: 1.5em;
     border-radius: 3px;
     padding: 3px;
     margin: 2px 0px 2px 0px;
     position: relative;
+    color: #9CA9B4;
 }
 
 .mini-description {
@@ -166,12 +175,12 @@ h2 {
     color: #2bffa3;
 }
 
-.unique_yellow {
-    color: #ffb60b;
+.unique {
+    color: #555555;
 }
 
-.defc {
-    color: #9CA9B4;
+.unique_yellow {
+    color: #ffb60b;
 }
 
 /* カーソルを重ねる要素 */
