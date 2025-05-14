@@ -63,7 +63,7 @@ h3 {
     border-radius: 7px;
     padding: 10px;
     margin-bottom: 10px;
-    width: 400px;
+    width: 320px;
 }
 
 .rolesback_head {
@@ -226,6 +226,7 @@ canvas {
     /* 文字色 */
     border-radius: 3px;
     /* 角丸 */
+    z-index: 1;
 }
 
 /* ホバー時にツールチップの非表示を解除 */
