@@ -51,6 +51,10 @@ h3 {
     background-color: darkkhaki;
 }
 
+.section_servernotflorr {
+    background-color: cadetblue;
+}
+
 .rolesback_container {
     display: flex;
     justify-content: center;
