@@ -18,27 +18,26 @@ const iconList = [
     "magnet",
     "egg_beetle",
     "stinger",
+    "crown"
 ]
 
 addEventListener("DOMContentLoaded", async function () {
 
-    const getRolesNeedIconFromHTMLElements = (() => {
-        return function (HTMLElements) {
-            const arr = [];
-            for (let i = 0; i < iconList.length; i++) {
-                const iconName = iconList[i];
-                arr[i] = null;
-                for (let j = 0; j < HTMLElements.length; j++) {
-                    const role = HTMLElements[j];
-                    if (role.classList.contains(iconName)) {
-                        arr[i] = role;
-                        break;
-                    }
+    function getRolesNeedIconFromHTMLElements(HTMLElements) {
+        const arr = [];
+        for (let i = 0; i < iconList.length; i++) {
+            const iconName = iconList[i];
+            arr[i] = null;
+            for (let j = 0; j < HTMLElements.length; j++) {
+                const role = HTMLElements[j];
+                if (role.classList.contains(iconName)) {
+                    arr[i] = role;
+                    break;
                 }
             }
-            return arr;
         }
-    })();
+        return arr;
+    }
 
     const image = await new Promise(function (resolve, reject) {
         const image = new Image();
